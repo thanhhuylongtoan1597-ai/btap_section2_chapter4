@@ -27,16 +27,16 @@
 
     <h2 style="color: green;">Additional Details:</h2>
     <label>Heard From:</label>
-    <span>${user.heardFrom}</span><br>
+    <span>${survey.heardFrom}</span><br>
 
     <label class="pad_top">Wants Updates:</label>
-    <span>${user.wantsUpdates}</span><br>
+    <span>${survey.wantsUpdates}</span><br>
 
     <label>Email OK:</label>
-    <span>${user.emailOK}</span><br>
+    <span>${survey.emailOK}</span><br>
 
     <label>Contact Via:</label>
-    <span>${user.contactVia}</span><br>
+    <span>${survey.contactVia}</span><br>
 
     <p class="pad_top">To enter another response, click on the Return button below:</p>
 

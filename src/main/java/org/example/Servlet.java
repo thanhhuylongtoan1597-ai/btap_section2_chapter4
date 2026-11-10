@@ -5,7 +5,7 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.WebServlet;
 
 @WebServlet("/survey")
-public class SurveyServlet extends HttpServlet {
+public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 
@@ -36,10 +36,10 @@ public class SurveyServlet extends HttpServlet {
                 emailOK = "No";
             }
 
-            User user = new User(firstName, lastName, email, dateOfBirth, heardFrom, wantsUpdates, emailOK, contactVia);
-
+            User user = new User(firstName, lastName, email, dateOfBirth);
+            Survey survey = new Survey(heardFrom, wantsUpdates, emailOK, contactVia);
             req.setAttribute("user", user);
-
+            req.setAttribute("survey", survey);
             url = "/thanks.jsp";
         }
         getServletContext().getRequestDispatcher(url).forward(req, resp);
