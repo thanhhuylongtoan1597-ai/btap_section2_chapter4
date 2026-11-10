@@ -2,9 +2,7 @@ package org.example;
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.WebServlet;
 
-@WebServlet("/survey")
 public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{

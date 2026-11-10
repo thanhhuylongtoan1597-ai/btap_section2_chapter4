@@ -5,16 +5,18 @@
          version="6.0">
 
     <servlet>
-        <servlet-name>EmailListServlet</servlet-name>
-        <servlet-class>org.example.EmailListServlet</servlet-class>
+        <servlet-name>SurveyServlet</servlet-name>
+        <servlet-class>org.example.Servlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>EmailListServlet</servlet-name>
-        <url-pattern>/emailList</url-pattern>
+        <servlet-name>SurveyServlet</servlet-name>
+        <url-pattern>/survey</url-pattern>
     </servlet-mapping>
+
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
+        <welcome-file>thanks.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
